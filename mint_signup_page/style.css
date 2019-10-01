@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ECEEF1;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #404040;
+  overflow: hidden;
+}
+
+nav {
+  display: none;
+}
+
+h1 {
+  margin: 10px;
+  color: #8D9096;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0 10px 15px 10px;
+  font-weight: normal;
+}
+
+p {
+  color: #505050;
+  font-size: 11px;
+}
+
+a {
+  color: #0077C5;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+label {
+  font-size: 12px;
+}
+
+small {
+  font-size: 8px;
+}
+
+span {
+  color: #fff;
+}
+
+.small {
+  font-size: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+header div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 5px;
+}
+header div a div {
+  width: 30px;
+  height: 30px;
+}
+
+.form {
+  min-width: 414px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form form {
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #c7c7c7;
+  width: 310px;
+  height: 550px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-direction: column;
+}
+.form form header p {
+  margin-bottom: 2px;
+}
+.form form .form-fields {
+  height: 230px;
+}
+.form form .form-fields fieldset {
+  border: none;
+  width: 200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form form p {
+  margin: 0 auto;
+}
+.form form p i {
+  line-height: 1.5;
+  padding: 0 5px;
+}
+.form form footer {
+  background-color: #ECEEF1;
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+.form form .form-footer {
+  text-align: center;
+  height: 40px;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #ECEEF1;
+  position: relative;
+  bottom: -12px;
+}
+.form form .form-footer small {
+  margin-top: 20px;
+}
+
+input {
+  width: 250px;
+  height: 25px;
+  border-radius: 2px;
+  border: 1px solid #C1C5C8;
+  margin: 5px 0;
+}
+
+.ball {
+  width: 18px;
+  height: 18px;
+  margin: 0 2px 0 2px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.img1 {
+  background-color: #00A6A4;
+}
+
+.img2 {
+  background-color: #2DA01D;
+}
+
+.img3 {
+  background-color: #D52C1F;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  background-color: #0077C5;
+  border: 1px solid #505050;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+button img {
+  width: 15px;
+  height: 15px;
+}
+button > span {
+  margin-left: 4px;
+}
+
+.form-button {
+  width: 250px;
+  height: 35px;
+  margin: 0 auto 20px auto;
+  padding: 10px 30px;
+  border: 1px solid #0077C5;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 0 10%;
+  width: 100%;
+}
+footer p {
+  font-size: 10px;
+  line-height: 1.5;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+footer .footer-links a {
+  font-size: 10px;
+  color: #505050;
+  margin: 2px 5px;
+}
+
+.form-footer {
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    height: 5vh;
+  }
+  nav div {
+    align-self: center;
+    line-height: 0.9;
+  }
+  nav div p {
+    font-size: 10px;
+    text-align: center;
+  }
+  nav div p a {
+    font-size: 10px;
+  }
+  nav button span {
+    font-size: 11px;
+  }
+
+  main {
+    height: 95vh;
+  }
+
+  .dissapear {
+    display: none;
+  }
+
+  .nav-button {
+    font: 400 13.3333px Arial;
+    width: 85px;
+    height: 27px;
+    margin: auto 20px auto 5px;
+    padding: 0 5px;
+  }
+
+  .form form .form-footer {
+    position: relative;
+    bottom: -13px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
