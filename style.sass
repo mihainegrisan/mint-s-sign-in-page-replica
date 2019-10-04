@@ -1,0 +1,226 @@
+@import reset
+@import variables
+@import mixins
+
+body
+  background-color: $background-clr
+  height: 100vh
+  font-family: $font-stack
+  color: #404040
+  overflow: hidden
+
+nav
+  display: none
+
+h1
+  margin: 10px
+  color: #8D9096
+
+h2
+  font-size: 20px
+  margin: 0 10px 15px 10px
+  font-weight: normal
+
+p
+  color: $black-clr
+  font-size: 11px
+
+a
+  color: $blue-clr
+  text-decoration: none
+  font-size: 10px
+
+label
+  font-size: 12px
+
+small
+  font-size: 8px
+
+span
+  color: $white-clr
+
+.small
+  font-size: 8px
+
+header
+  @include flexBox(column, center)
+
+  div
+    @include flexBox(row, center)
+
+    a
+      @include flexBox(row, center)
+      margin-left: 5px
+
+      div
+        width: 30px
+        height: 30px
+
+
+.img1,
+.img2,
+.img3
+  opacity: 0
+
+.p1,
+.p2,
+.p3
+  opacity: 0
+
+#title
+  opacity: 0
+
+.form
+  min-width: 414px
+  width: 100%
+  margin-top: 20px
+  form
+    border-radius: 2px
+    background-color: $white-clr
+    border: 1px solid $grey-clr
+    width: 310px
+    height: 550px
+    margin: 0 auto
+    // padding: 0 20px
+    @include flexBox(column, space-around)
+
+    header
+      p
+        margin-bottom: 2px
+
+    .form-fields
+      height: 230px
+      fieldset
+        border: none
+        width: 200px
+        margin: 20px auto
+        @include flexBox(column, center)
+
+    p
+      margin: 0 auto
+      i
+        line-height: 1.5
+        padding: 0 5px
+
+    footer
+      background-color: $background-clr
+      width: 100%
+      margin: 30px 0 0 0
+
+    .form-footer
+      text-align: center
+      height: 40px
+      width: 100%
+      padding: 10px 20px
+      background-color: $background-clr
+      position: relative
+      bottom: -12px
+      small
+        margin-top: 20px
+
+input
+  width: 250px
+  height: 25px
+  border-radius: 2px
+  border: 1px solid #C1C5C8
+  margin: 5px 0
+
+.ball
+  width: 18px
+  height: 18px
+  margin: 0 2px 0 2px
+  border-radius: 50%
+  background-color: green
+
+.img1
+  background-color: #00A6A4
+.img2
+  background-color: #2DA01D
+.img3
+  background-color: #D52C1F
+
+button
+  @include flexBox(row, center)
+  color: $white-clr
+  background-color: $blue-clr
+  border: 1px solid $black-clr
+  border-radius: 4px
+  cursor: pointer
+  padding: 5px 10px
+  img
+    width: 15px
+    height: 15px
+  >span
+    margin-left: 4px
+
+.form-button
+  width: 250px
+  height: 35px
+  // margin-left: 8px
+  // margin-bottom: 20px
+  margin: 0 auto 20px auto
+  padding: 10px 30px
+  border: 1px solid $blue-clr
+
+.center
+  text-align: center
+
+.logo
+  font-size: 16px
+  font-family: $font-stack
+
+
+footer
+  margin-top: 20px
+  padding: 0 10%
+  width: 100%
+
+  p
+    font-size: 10px
+    line-height: 1.5
+
+  .footer-links
+    @include flexBox(row, center)
+
+    a
+      font-size: 10px
+      color: $black-clr
+      margin: 2px 5px
+
+.form-footer
+  padding: 0
+
+@media only screen and (min-width: 768px)
+  nav
+    @include flexBox(row, flex-end)
+    height: 5vh
+
+    div
+      align-self: center
+      line-height: 0.9
+      p
+        font-size: 10px
+        text-align: center
+        a
+          font-size: 10px
+    button
+      span
+        font-size: 11px
+
+  main
+    height: 95vh
+
+  .dissapear
+    display: none
+
+  .nav-button
+    font: 400 13.3333px Arial
+    width: 85px
+    height: 27px
+    margin: auto 20px auto 5px
+    padding: 0 5px
+  .form
+    form
+      .form-footer
+        position: relative
+        bottom: -13px
